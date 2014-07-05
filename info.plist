@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>carlosgaldino.boom-gifs</string>
+	<key>connections</key>
+	<dict>
+		<key>930CC0C6-28AC-414F-B527-60778B955C50</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>316477A3-E4D8-4238-828C-D3AE14D1DBBF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>AF3DABA8-C008-4E9B-B9BD-D2C527545BFD</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Open URL</string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Carlos Galdino (@carlosgaldino)</string>
+	<key>description</key>
+	<string>Search boom's `gifs` list</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Boom GIFs list</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>boom</string>
+				<key>runningsubtext</key>
+				<string>Fetching GIFs</string>
+				<key>script</key>
+				<string>ruby script.rb "{query}"</string>
+				<key>title</key>
+				<string>Search GIFs saved on `boom`</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>930CC0C6-28AC-414F-B527-60778B955C50</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>316477A3-E4D8-4238-828C-D3AE14D1DBBF</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>AF3DABA8-C008-4E9B-B9BD-D2C527545BFD</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>316477A3-E4D8-4238-828C-D3AE14D1DBBF</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>930CC0C6-28AC-414F-B527-60778B955C50</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>AF3DABA8-C008-4E9B-B9BD-D2C527545BFD</key>
+		<dict>
+			<key>ypos</key>
+			<real>150</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
