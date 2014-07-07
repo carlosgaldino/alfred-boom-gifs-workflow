@@ -14,7 +14,7 @@ def match?(word, query)
   word.match(/#{query}/i)
 end
 
-gifs = JSON.parse(File.read(File.open(File.expand_path('~/.boom'))))['lists'].first['gifs']
+gifs = JSON.parse(File.read(File.expand_path('~/.boom')))['lists'].first['gifs']
 
 query = Regexp.escape(ARGV.first).delete(':')
 
