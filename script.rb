@@ -16,7 +16,7 @@ end
 
 gifs = JSON.parse(File.read(File.expand_path('~/.boom')))['lists'].first['gifs']
 
-query = Regexp.escape(ARGV.first).delete(':')
+query = Regexp.escape(ARGV.first)
 
 matches = gifs.select { |h| match?(h.keys.first, query) || match?(h.values.first, query) }
 
